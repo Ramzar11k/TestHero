@@ -1,5 +1,4 @@
 from Hero import Hero
-from Unit import Unit
 from Beast import Beast
 from Arena import Arena
 
