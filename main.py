@@ -22,7 +22,7 @@ beast = Beast(name="Beast",
               speedRange=(40, 60),
               luckRange=(25, 40))
 
-fight = Arena(name="Emagia", fighter1=ordeus, fighter2=beast, maxTurns=20)
+fight = Arena(name="Emagia", fighter1=ordeus, fighter2=billy, maxTurns=20)
 fight.StartCombat()
 
 print("Combat Ended")

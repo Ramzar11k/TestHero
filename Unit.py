@@ -43,38 +43,40 @@ class Unit(ABC):
     """
 
     def __init__(self, name, healthRange, strengthRange, defenceRange, speedRange, luckRange):
-        """Initializes the units stats
+        """
+        Initializes the units stats.
 
         Parameters
         ----------
         name : str
-            The name of the unit
+            The name of the unit.
         healthRange: tuple(minInt, maxInt)
-            Range of values used to determine the units health
-            Passed values must be non negative and minInt <= maxInt
+            Range of values used to determine the units health.
+            Passed values must be non negative and minInt <= maxInt.
         strengthRange: tuple(minInt, maxInt)
-            Range of values used to determine the units strength
-            Passed values must be non negative and minInt <= maxInt
+            Range of values used to determine the units strength.
+            Passed values must be non negative and minInt <= maxInt.
         defenceRange: tuple(minInt, maxInt)
-            Range of values used to determine the units defence
-            Passed values must be non negative and minInt <= maxInt
+            Range of values used to determine the units defence.
+            Passed values must be non negative and minInt <= maxInt.
         speedRange: tuple(minInt, maxInt)
-            Range of values used to determine the units speed
-            Passed values must be non negative and minInt <= maxInt
+            Range of values used to determine the units speed.
+            Passed values must be non negative and minInt <= maxInt.
         luckRange: tuple(minInt, maxInt)
-            Range of values used to determine the units luck
-            Passed values must be non negative and minInt <= maxInt
+            Range of values used to determine the units luck.
+            Passed values must be non negative and minInt <= maxInt.
 
         Raises
         ------
         TypeError
-            If name is not a string
-            If any of the ranges is not a tuple
+            If name is not a string.
+            If any of the ranges is not a tuple.
 
         ValueError
-            If a range is not in the format (int, int)
-            If a range value is negative
-            If a ranges minVal is bigger than its maxVal
+            If there are not six parameters passed.
+            If a range is not in the format (int, int).
+            If a range value is negative.
+            If a ranges minVal is bigger than its maxVal.
         """
 
         self.__ValidateInputs(name=name,
@@ -92,13 +94,16 @@ class Unit(ABC):
 
     @staticmethod
     def __ValidateInputs(name, healthRange, strengthRange, defenceRange, speedRange, luckRange):
+        if len(locals()) != 6:
+            raise ValueError("Unit class takes six parameters")
+
         ranges = [(healthRange, "healthRange"),
                   (strengthRange, "strengthRange"),
                   (defenceRange, "defenceRange"),
                   (speedRange, "speedRange"),
                   (luckRange, "luckRange")]
         if type(name) is not str:
-            raise TypeError("name must be a string")
+            raise TypeError("Unit name must be a string")
 
         for statRange in ranges:
             if type(statRange[0]) is not tuple:

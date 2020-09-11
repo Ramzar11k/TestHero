@@ -169,6 +169,12 @@ class Hero(Unit):
         TypeError
             If incomingDamage is not an int
             If procChance is not a number
+
+        Return
+        ------
+        Int
+           Returns the amount of damage the Hero will take, affected by the
+           damage reduction if it procs.
         """
 
         if len(locals()) != 3:

@@ -1,20 +1,117 @@
 import random
 import time
+from Unit import Unit
 
 
 class Arena:
+    """
+    An Arena takes two units and has them fight each other.
+
+    ...
+
+    Attributes
+    ----------
+    name : str
+        Name of the arena.
+    fighter1: Unit
+        First fighter.
+    fighter2: Unit
+        Second fighter.
+    maxTurns: int
+        Maximum number of turns until combat is over.
+        A turn ends when the attacker and defender swap.
+        Minimum of 1 turn.
+    currentTurn: int
+        The current combat turn.
+    combatInProgress: bool
+        True while the units are fighting.
+
+    Methods
+    -------
+    DetermineAttackOrder()
+        Decides which fighter attacks first based on who has the higher speed.
+        If their speeds are equal the higher luck attacks first.
+        If their luck is also equal it is determined by chance.
+    EndTurn()
+        Checks if the combat has ended, either by knockout or turn limit.
+        If it is not over it swaps the attacker and defender and continues.
+    CombatAttack()
+        Makes the attacker attack the defender.
+    StartCombat()
+        Starts the fight.
+    """
+
     def __init__(self, name, fighter1, fighter2, maxTurns):
+        """
+        Initializes the arena.
+
+        Parameters
+        ----------
+        name : str
+            The name of the arena
+        fighter1: Unit
+            The first fighter.
+        fighter2: Unit
+            The second fighter.
+        maxTurns: int
+            The maximum number of turns that can happen until combat is over.
+            A turn ends when the attacker and defender swap.
+            Minimum of 1 turn.
+
+        Raises
+        ------
+        TypeError
+            If name is not a string.
+            If fighter1 does not inherit from the Unit class.
+            If fighter2 does not inherit from the Unit class.
+            If maxTurns is not an int.
+
+        ValueError
+            If there are not four parameters passed.
+            If maxTurns is less than 1.
+        """
+
+        self.__ValidateInputs(name=name,
+                              fighter1=fighter1,
+                              fighter2=fighter2,
+                              maxTurns=maxTurns)
         self.name = name
-        self.combatInProgress = False
-        self.currentTurn = 1
         self.maxTurns = maxTurns
+        self.currentTurn = 1
+        self.combatInProgress = False
 
         self.fighter1 = fighter1
         self.fighter2 = fighter2
 
         self.DetermineAttackOrder()
 
+    @staticmethod
+    def __ValidateInputs(name, fighter1, fighter2, maxTurns):
+        if len(locals()) != 4:
+            raise ValueError("Arena class takes four parameters")
+
+        if type(name) is not str:
+            raise TypeError("Arena name must be a string")
+        if not issubclass(type(fighter1), Unit):
+            raise TypeError("Fighter1 must inherit from class Unit")
+        if not issubclass(type(fighter2), Unit):
+            raise TypeError("Fighter2 must inherit from class Unit")
+        if type(maxTurns) is not int:
+            raise TypeError("Max turns must be an int")
+
+        if maxTurns < 1:
+            raise ValueError("Max turns must be at least 1")
+
+
+
     def DetermineAttackOrder(self):
+        """
+        Determines which fighter attacks first.
+        The fighter with the higher speed starts.
+        If their speeds are equal the higher luck attacks first.
+        If their luck is also equal it is determined by chance.
+        """
+
         if self.fighter1.speed > self.fighter2.speed:
             self.attacker = self.fighter1
             self.defender = self.fighter2
@@ -36,7 +133,20 @@ class Arena:
                     self.attacker = self.fighter2
                     self.defender = self.fighter1
 
-    def SwapTurn(self):
+    def EndTurn(self):
+        """
+        Checks if the combat has ended, either by knockout or turn limit.
+        If it is not over it swaps the attacker and defender and continues.
+
+        Returns
+        -------
+        True
+            If the defenders health is <= 0
+            If currentTurn == maxTurns
+        False
+            Otherwise
+        """
+
         if self.defender.health <= 0:
             print("{0} ran out of health and passed out, {1} is the victor!".format(self.defender.name, self.attacker.name))
             return True
@@ -48,9 +158,19 @@ class Arena:
         return False
 
     def CombatAttack(self):
+        """
+        Makes the attacker attack the defender.
+        Calls the attacking Units Attack method.
+        """
         self.attacker.Attack(target=self.defender)
 
     def StartCombat(self):
+        """
+        Starts the fight, the combat cycle also occurs here.
+        The fight continues until one of the end conditions from
+        EndTurn() is met.
+        """
+
         print("------------------------------------")
         self.attacker.PrintInfo()
         self.defender.PrintInfo()
@@ -59,7 +179,7 @@ class Arena:
         while self.combatInProgress and self.currentTurn < self.maxTurns:
             print("Turn {}:".format(self.currentTurn))
             self.CombatAttack()
-            if self.SwapTurn():
+            if self.EndTurn():
                 print("------------------------------------")
                 break
             print("------------------------------------")
