@@ -16,6 +16,7 @@ testUnit2 = Beast(name="Beast",
               speedRange=(40, 60),
               luckRange=(25, 40))
 
+
 testArena = Arena(name="Emagia", fighter1=testUnit, fighter2=testUnit2, maxTurns=20)
 
 
