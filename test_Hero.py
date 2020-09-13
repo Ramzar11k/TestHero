@@ -27,6 +27,7 @@ class TestArena(unittest.TestCase):
 
     def test_magicShield(self):
         self.assertEqual(Hero.MagicShield(testUnit, 30, 100), 15)
+        self.assertEqual(Hero.MagicShield(testUnit, 30, 0), 30)
 
         self.assertRaises(TypeError, Hero.MagicShield, testUnit, 30, "20")
         self.assertRaises(TypeError, Hero.MagicShield, testUnit, True, 20)
