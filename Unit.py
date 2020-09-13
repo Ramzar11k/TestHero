@@ -79,7 +79,7 @@ class Unit(ABC):
             If a ranges minVal is bigger than its maxVal.
         """
 
-        self.__ValidateInputs(name=name,
+        self.ValidateInputs(name=name,
                               healthRange=healthRange,
                               strengthRange=strengthRange,
                               defenceRange=defenceRange,
@@ -92,10 +92,9 @@ class Unit(ABC):
         self.speed = random.randint(speedRange[0], speedRange[1])
         self.luck = random.randint(luckRange[0], luckRange[1])
 
-    @staticmethod
-    def __ValidateInputs(name, healthRange, strengthRange, defenceRange, speedRange, luckRange):
-        if len(locals()) != 6:
-            raise ValueError("Unit class takes six parameters")
+    def ValidateInputs(self, name, healthRange, strengthRange, defenceRange, speedRange, luckRange):
+        if len(locals()) != 7:
+            raise TypeError("Unit class takes six parameters")
 
         ranges = [(healthRange, "healthRange"),
                   (strengthRange, "strengthRange"),
@@ -113,7 +112,7 @@ class Unit(ABC):
                 raise ValueError("{} must have the format (minValue, maxValue)".format(statRange[1]))
 
             if type(statRange[0][0]) is not int or type(statRange[0][1]) is not int:
-                raise ValueError("{} values must be (int, int)".format(statRange[1]))
+                raise TypeError("{} values must be (int, int)".format(statRange[1]))
 
             if statRange[0][0] < 0 or statRange[0][1] < 0:
                 raise ValueError("{} values must be non negative".format(statRange[1]))
@@ -141,14 +140,13 @@ class Unit(ABC):
 
         Raises
         ------
-        ValueError
-            If there is no parameter passed
         TypeError
+            If there is not one parameter passed
             If the selected target does not inherit from the Unit class
         """
 
         if len(locals()) != 2:
-            raise ValueError("Unit.Attack(target) takes one parameter")
+            raise TypeError("Unit.Attack(target) takes one parameter")
         if not issubclass(type(target), Unit):
             raise TypeError("Target must inherit from class Unit")
 
@@ -166,14 +164,14 @@ class Unit(ABC):
         Raises
         ------
         ValueError
-            If there is no parameter passed
             If the value of attackerStrength is negative
         TypeError
+            If there is not one parameter passed
             If attackerStrength is not an int
         """
 
         if len(locals()) != 2:
-            raise ValueError("Unit.CalculateDamageTaken(attackerStrength) takes one parameter")
+            raise TypeError("Unit.CalculateDamageTaken(attackerStrength) takes one parameter")
         if type(attackerStrength) is not int:
             raise TypeError("attackerStrength must be of type int")
         if attackerStrength < 0:
@@ -193,19 +191,15 @@ class Unit(ABC):
         Raises
         ------
         ValueError
-            If there is no parameter passed
             If the value of damage is negative
         TypeError
+            If there is not one parameter passed
             If damage is not an int
         """
 
         if len(locals()) != 2:
-            raise ValueError("Unit.TakeDamage(damage) takes one parameter")
+            raise TypeError("Unit.TakeDamage(damage) takes one parameter")
         if type(damage) is not int:
             raise TypeError("damage must be of type int")
         if damage < 0:
             raise ValueError("damage must be non negative")
-
-    @abstractmethod
-    def Defeat(self):
-        print("ouch")

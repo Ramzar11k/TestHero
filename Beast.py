@@ -13,9 +13,8 @@ class Beast(Unit):
 
         Raises
         ------
-        ValueError
-            If there is no parameter passed
         TypeError
+            If there is not one parameter passed
             If the selected target does not inherit from the Unit class
         """
         super().Attack(target)
@@ -35,9 +34,9 @@ class Beast(Unit):
         Raises
         ------
         ValueError
-            If there is no parameter passed
             If the value of attackerStrength is negative
         TypeError
+            If there is not one parameter passed
             If attackerStrength is not an int
         """
 
@@ -57,9 +56,9 @@ class Beast(Unit):
         Raises
         ------
         ValueError
-            If there is no parameter passed
             If the value of damage is negative
         TypeError
+            If there is not one parameter passed
             If damage is not an int
         """
 
@@ -69,6 +68,3 @@ class Beast(Unit):
             return
         self.health -= damage
         print("{0} took {1} damage, and has {2} health remaining".format(self.name, damage, self.health))
-
-    def Defeat(self):
-        print("ouch")

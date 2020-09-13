@@ -61,17 +61,18 @@ class Arena:
         Raises
         ------
         TypeError
+            If there are not four parameters passed.
             If name is not a string.
             If fighter1 does not inherit from the Unit class.
             If fighter2 does not inherit from the Unit class.
+            If fighter1 is fighter2.
             If maxTurns is not an int.
 
         ValueError
-            If there are not four parameters passed.
             If maxTurns is less than 1.
         """
 
-        self.__ValidateInputs(name=name,
+        self.ValidateInputs(name=name,
                               fighter1=fighter1,
                               fighter2=fighter2,
                               maxTurns=maxTurns)
@@ -85,10 +86,9 @@ class Arena:
 
         self.DetermineAttackOrder()
 
-    @staticmethod
-    def __ValidateInputs(name, fighter1, fighter2, maxTurns):
-        if len(locals()) != 4:
-            raise ValueError("Arena class takes four parameters")
+    def ValidateInputs(self, name, fighter1, fighter2, maxTurns):
+        if len(locals()) != 5:
+            raise TypeError("Arena class takes four parameters")
 
         if type(name) is not str:
             raise TypeError("Arena name must be a string")
@@ -96,6 +96,8 @@ class Arena:
             raise TypeError("Fighter1 must inherit from class Unit")
         if not issubclass(type(fighter2), Unit):
             raise TypeError("Fighter2 must inherit from class Unit")
+        if fighter1 is fighter2:
+            raise TypeError("You need two different unit")
         if type(maxTurns) is not int:
             raise TypeError("Max turns must be an int")
 

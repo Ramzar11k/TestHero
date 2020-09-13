@@ -57,9 +57,8 @@ class Hero(Unit):
 
         Raises
         ------
-        ValueError
-            If there is no parameter passed
         TypeError
+            If there is not one parameter passed
             If the selected target does not inherit from the Unit class
         """
 
@@ -81,12 +80,13 @@ class Hero(Unit):
         Raises
         ------
         ValueError
-            If there is no parameter passed
             If the value of attackerStrength is negative
         TypeError
+            If there is not one parameter passed
             If attackerStrength is not an int
         """
 
+        super().CalculateDamageTaken(attackerStrength)
         damageTaken = max(attackerStrength - self.defence, 0)
         damageTaken = self.MagicShield(damageTaken, 20)
         self.TakeDamage(damage=damageTaken)
@@ -104,9 +104,9 @@ class Hero(Unit):
         Raises
         ------
         ValueError
-            If there is no parameter passed
             If the value of damage is negative
         TypeError
+            If there is not one parameter passed
             If damage is not an int
         """
 
@@ -131,16 +131,14 @@ class Hero(Unit):
 
         Raises
         ------
-        ValueError
-            If there are more or less than two parameters passed.
-
         TypeError
+            If there are more or less than two parameters passed.
             If the selected target does not inherit from the Unit class.
             If procChance is not a number
         """
 
         if len(locals()) != 3:
-            raise ValueError("Hero.RapidStrike(target, procChance) takes two parameters")
+            raise TypeError("Hero.RapidStrike(target, procChance) takes two parameters")
         if not issubclass(type(target), Unit):
             raise TypeError("Target must inherit from class Unit")
         if type(procChance) is not float and type(procChance) is not int:
@@ -163,10 +161,8 @@ class Hero(Unit):
 
         Raises
         ------
-        ValueError
-            If there are more or less than two parameters passed.
-
         TypeError
+            If there are more or less than two parameters passed.
             If incomingDamage is not an int
             If procChance is not a number
 
@@ -178,7 +174,7 @@ class Hero(Unit):
         """
 
         if len(locals()) != 3:
-            raise ValueError("Hero.MagicShield(incomingDamage, procChance) takes two parameters")
+            raise TypeError("Hero.MagicShield(incomingDamage, procChance) takes two parameters")
         if type(incomingDamage) is not int:
             raise TypeError("incomingDamage must be of type int")
         if type(procChance) is not float and type(procChance) is not int:
@@ -190,6 +186,3 @@ class Hero(Unit):
         if incomingDamage < 0:
             incomingDamage = 0
         return incomingDamage
-
-    def Defeat(self):
-        print("ouch")
