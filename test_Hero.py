@@ -15,6 +15,7 @@ testUnit2 = Beast(name="Beast",
               speedRange=(40, 60),
               luckRange=(25, 40))
 
+
 class TestArena(unittest.TestCase):
     def test_rapidStrikes(self):
         self.assertRaises(TypeError, Hero.RapidStrike, testUnit, testUnit, "20")

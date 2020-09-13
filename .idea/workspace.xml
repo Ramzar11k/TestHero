@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5654ddd-6ab3-47a6-8375-647821b0a836" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/test_Arena.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_Hero.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_Unit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arena.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arena.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beast.py" beforeDir="false" afterPath="$PROJECT_DIR$/Beast.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hero.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hero.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_Hero.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_Hero.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,9 +185,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="976" y="525" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1599817892041" />
-    <state x="2953" y="344" width="1594" height="1165" maximized="true" key="dock-window-1" timestamp="1600011818412">
-      <screen x="2560" y="360" width="1858" height="1080" />
+    <state x="2953" y="344" width="1594" height="1165" maximized="true" key="dock-window-1" timestamp="1600019152236">
+      <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state x="2953" y="344" width="1594" height="1165" maximized="true" key="dock-window-1/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600011818412" />
+    <state x="2953" y="344" width="1594" height="1165" maximized="true" key="dock-window-1/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@0.0.2560.1400" timestamp="1600019152236" />
   </component>
 </project>
