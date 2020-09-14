@@ -154,6 +154,7 @@ class Unit(ABC):
     def CalculateDamageTaken(self, attackerStrength):
         """Calculates the damage this unit will take
         Damage is calculated by : damage = AttackerStrength - DefenderDefence
+        Has a chance equal to this units luck to avoid damage.
 
         Parameters
         ----------
@@ -180,7 +181,6 @@ class Unit(ABC):
     @abstractmethod
     def TakeDamage(self, damage):
         """Damages this unit.
-        Has a chance equal to this units luck to avoid damage.
 
         Parameters
         ----------

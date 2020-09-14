@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5654ddd-6ab3-47a6-8375-647821b0a836" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/Abilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_Abilities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_Hero.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_Hero.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beast.py" beforeDir="false" afterPath="$PROJECT_DIR$/Beast.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hero.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hero.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_Hero.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +41,8 @@
       <recent name="C:\Users\andre\PycharmProjects\EmagsHero3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_Hero.py">
-    <configuration name="Beast_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in test_Abilities.py">
+    <configuration name="Unit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EmagsHero3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -49,7 +54,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Beast_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -77,6 +82,20 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_Abilities.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="EmagsHero3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_Abilities.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test_Arena.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -107,27 +126,13 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_Unit.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="EmagsHero3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_Unit.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_Abilities.py" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.Unit" />
         <item itemvalue="Python tests.Unittests in test_Hero.py" />
         <item itemvalue="Python tests.Unittests in test_Arena.py" />
-        <item itemvalue="Python tests.Unittests in test_Unit.py" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.Beast_test" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +153,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1010" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600084308785">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1010" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600084308785" />
     <state x="812" y="297" key="CommitChangelistDialog2" timestamp="1600019208578">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -158,38 +167,38 @@
     </state>
     <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1599825280751" />
     <state x="1060" y="456" key="FileChooserDialogImpl/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@0.0.2560.1400" timestamp="1599780723487" />
-    <state width="2539" height="295" key="GridCell.Tab.0.bottom" timestamp="1600019301056">
+    <state width="2539" height="295" key="GridCell.Tab.0.bottom" timestamp="1600086927447">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600013178557" />
+    <state width="2539" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600086927447" />
     <state width="2539" height="295" key="GridCell.Tab.0.bottom/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@0.0.2560.1400" timestamp="1600019301056" />
     <state width="1837" height="295" key="GridCell.Tab.0.bottom/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@2560.360.1920.1040" timestamp="1599776265501" />
-    <state width="2539" height="295" key="GridCell.Tab.0.center" timestamp="1600019301056">
+    <state width="2539" height="295" key="GridCell.Tab.0.center" timestamp="1600086927447">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="295" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600013178557" />
+    <state width="2539" height="295" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600086927447" />
     <state width="2539" height="295" key="GridCell.Tab.0.center/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@0.0.2560.1400" timestamp="1600019301056" />
     <state width="1837" height="295" key="GridCell.Tab.0.center/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@2560.360.1920.1040" timestamp="1599776265501" />
-    <state width="2539" height="295" key="GridCell.Tab.0.left" timestamp="1600019301055">
+    <state width="2539" height="295" key="GridCell.Tab.0.left" timestamp="1600086927447">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="295" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600013178557" />
+    <state width="2539" height="295" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600086927447" />
     <state width="2539" height="295" key="GridCell.Tab.0.left/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@0.0.2560.1400" timestamp="1600019301055" />
     <state width="1837" height="295" key="GridCell.Tab.0.left/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@2560.360.1920.1040" timestamp="1599776265501" />
-    <state width="2539" height="295" key="GridCell.Tab.0.right" timestamp="1600019301056">
+    <state width="2539" height="295" key="GridCell.Tab.0.right" timestamp="1600086927447">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="295" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600013178557" />
+    <state width="2539" height="295" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600086927447" />
     <state width="2539" height="295" key="GridCell.Tab.0.right/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@0.0.2560.1400" timestamp="1600019301056" />
     <state width="1837" height="295" key="GridCell.Tab.0.right/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@2560.360.1920.1040" timestamp="1599776265501" />
     <state x="976" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1599817892041">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="976" y="525" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1599817892041" />
-    <state x="2953" y="344" width="1594" height="1165" maximized="true" key="dock-window-1" timestamp="1600019152236">
-      <screen x="2560" y="360" width="1920" height="1040" />
+    <state x="2560" y="360" width="1874" height="1165" key="dock-window-1" timestamp="1600083615446">
+      <screen x="2560" y="360" width="1858" height="1080" />
     </state>
-    <state x="2953" y="344" width="1594" height="1165" maximized="true" key="dock-window-1/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600011818412" />
+    <state x="2560" y="360" width="1874" height="1165" key="dock-window-1/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600083615446" />
     <state x="2953" y="344" width="1594" height="1165" maximized="true" key="dock-window-1/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@0.0.2560.1400" timestamp="1600019152236" />
   </component>
 </project>
