@@ -38,8 +38,6 @@ class Unit(ABC):
         Calculates how much damage this unit will take from an attack
     TakeDamage(damage)
         Damages this unit
-    Defeat()
-        Runs when the unit is defeated (health <= 0)
     """
 
     def __init__(self, name, healthRange, strengthRange, defenceRange, speedRange, luckRange):

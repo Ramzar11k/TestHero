@@ -174,8 +174,8 @@ class Arena:
         """
 
         print("------------------------------------")
-        self.attacker.PrintInfo()
-        self.defender.PrintInfo()
+        self.fighter1.PrintInfo()
+        self.fighter2.PrintInfo()
         print("------------------------------------")
         self.combatInProgress = True
         while self.combatInProgress and self.currentTurn < self.maxTurns:
