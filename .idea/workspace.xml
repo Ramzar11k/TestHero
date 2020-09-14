@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5654ddd-6ab3-47a6-8375-647821b0a836" name="Default Changelist" comment="1">
+    <list default="true" id="f5654ddd-6ab3-47a6-8375-647821b0a836" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_Hero.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_Hero.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../TestHeroV2/TestHero" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -142,10 +141,19 @@
       <option name="presentableId" value="Default" />
       <updated>1599775722675</updated>
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1600019205309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600019205309</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="812" y="297" key="CommitChangelistDialog2" timestamp="1600019208578">
@@ -153,10 +161,11 @@
     </state>
     <state x="-1269" y="579" key="CommitChangelistDialog2/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600011699018" />
     <state x="812" y="297" key="CommitChangelistDialog2/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@0.0.2560.1400" timestamp="1600019208578" />
-    <state x="1060" y="456" key="FileChooserDialogImpl" timestamp="1599825280751">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="3329" y="712" key="FileChooserDialogImpl" timestamp="1600083458571">
+      <screen x="2560" y="360" width="1858" height="1080" />
     </state>
     <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1599825280751" />
+    <state x="3329" y="712" key="FileChooserDialogImpl/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@2560.360.1858.1080" timestamp="1600083458571" />
     <state x="1060" y="456" key="FileChooserDialogImpl/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@0.0.2560.1400" timestamp="1599780723487" />
     <state width="2539" height="295" key="GridCell.Tab.0.bottom" timestamp="1600019301056">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -182,10 +191,10 @@
     <state width="2539" height="295" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600013178557" />
     <state width="2539" height="295" key="GridCell.Tab.0.right/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@0.0.2560.1400" timestamp="1600019301056" />
     <state width="1837" height="295" key="GridCell.Tab.0.right/2560.360.1920.1040/-1858.350.1858.1080/0.0.2560.1400@2560.360.1920.1040" timestamp="1599776265501" />
-    <state x="976" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1599817892041">
+    <state x="976" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1600081676331">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="976" y="525" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1599817892041" />
+    <state x="976" y="525" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.360.1858.1080/-1858.350.1858.1080@0.0.2560.1400" timestamp="1600081676331" />
     <state x="2953" y="344" width="1594" height="1165" maximized="true" key="dock-window-1" timestamp="1600019152236">
       <screen x="2560" y="360" width="1920" height="1040" />
     </state>
