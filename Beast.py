@@ -46,7 +46,7 @@ class Beast(Unit):
             If attackerStrength is not an int
         """
 
-        if random.randint(0, 100) <= 100:
+        if random.randint(0, 100) <= self.luck:
             print("{} gets lucky and avoids the attack".format(self.name))
             return
         damageTaken = max(attackerStrength - self.defence, 0)
